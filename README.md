@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>ML Engineer · Backend Developer · AI Builder</b><br/>
-  KIIT University, CSE &nbsp;|&nbsp; |&nbsp; Bhubaneswar, India
+  KIIT University, CSE &nbsp;|&nbsp; CGPA 9.66 &nbsp;|&nbsp; Bhubaneswar, India
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ### 🧠 About Me
 
-- 🔬 ML Researcher — building Generative AI pipelines with LangChain
+- 🔬 ML Researcher @ **IoT Lab, KIIT** — building Generative AI pipelines with LangChain
 - 🚀 I build end-to-end AI products: from raw data → ML pipeline → deployed app
 - 💡 Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
 - 🧩 800+ DSA problems solved across LeetCode, CodeChef, and Codeforces
@@ -59,8 +59,9 @@
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**Klypse**](https://github.com/DEVJHAWAR11/VidiqAI) | AI Chrome extension — ask any question about any YouTube video, get streamed answers in real time | FastAPI · LangChain · FAISS · Groq LLaMA · Docker |
-| [**Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
+| [📰 **Fake News Detection**](https://github.com/DEVJHAWAR11/Fake-News-Detection) | Bidirectional LSTM classifier trained on 20K+ articles — detects misinformation with 99% accuracy using GloVe embeddings | Keras · TensorFlow · BiLSTM · GloVe · Streamlit |
+| [🤖 **Klypse**](https://github.com/DEVJHAWAR11/VidiqAI) | AI Chrome extension — ask any question about any YouTube video, get streamed answers in real time | FastAPI · LangChain · FAISS · Groq LLaMA · Docker |
+| [🏠 **Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
 
 ---
 
@@ -80,7 +81,7 @@
 
 ### 🏆 Competitive Programming
 
-- **LeetCode** — Max Rating **1704** · 800+ problems solved
+- **LeetCode** — Max Rating **1658** · 800+ problems solved
 - **CodeChef & Codeforces** — consistent problem solving across DP and Graph algorithms
 
 ---
