@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>ML Engineer · Backend Developer · AI Builder</b><br/>
-  KIIT University, CSE &nbsp;|&nbsp; CGPA 9.66 &nbsp;|&nbsp; Bhubaneswar, India
+  KIIT University, CSE &nbsp;|&nbsp; |&nbsp; Bhubaneswar, India
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ### 🧠 About Me
 
-- 🔬 ML Researcher @ **IoT Lab, KIIT** — building Generative AI pipelines with LangChain
+- 🔬 ML Researcher  — building Generative AI pipelines with LangChain
 - 🚀 I build end-to-end AI products: from raw data → ML pipeline → deployed app
 - 💡 Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
 - 🧩 800+ DSA problems solved across LeetCode, CodeChef, and Codeforces
@@ -81,7 +81,7 @@
 
 ### 🏆 Competitive Programming
 
-- **LeetCode** — Max Rating **1658** · 800+ problems solved
+- **LeetCode** — Max Rating **1704** · 800+ problems solved
 - **CodeChef & Codeforces** — consistent problem solving across DP and Graph algorithms
 
 ---
