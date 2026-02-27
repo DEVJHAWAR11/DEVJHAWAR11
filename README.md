@@ -80,7 +80,7 @@
 
 ### 🏆 Competitive Programming
 
-- **LeetCode** — Max Rating **1658** · 800+ problems solved
+- **LeetCode** — Max Rating **1704** · 800+ problems solved
 - **CodeChef & Codeforces** — consistent problem solving across DP and Graph algorithms
 
 ---
