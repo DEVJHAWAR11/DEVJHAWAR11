@@ -2,15 +2,17 @@
 
 <p align="center">
   <b>ML Engineer · Backend Developer · AI Builder</b><br/>
-  KIIT University, CSE &nbsp;|&nbsp; |&nbsp; Bhubaneswar, India
+  KIIT University, CSE &nbsp;|&nbsp; Bhubaneswar, India
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/dev-jhawar11"><img src="https://img.shields.io/badge/LinkedIn-dev--jhawar11-0077B5?style=flat&logo=linkedin" /></a>
   &nbsp;
   <a href="mailto:dev.jhawar.cs@gmail.com"><img src="https://img.shields.io/badge/Gmail-dev.jhawar.cs-D14836?style=flat&logo=gmail&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://leetcode.com/"><img src="https://img.shields.io/badge/LeetCode-Rating%201658-FFA116?style=flat&logo=leetcode&logoColor=black" /></a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=58A6FF&center=true&vCenter=true&width=480&lines=ML+Engineer+%7C+Backend+Developer+%7C+AI+Builder;Building+real-world+AI+products+%F0%9F%9A%80;RAG+systems+%7C+LLMs+%7C+FastAPI+%7C+PyTorch" alt="Typing SVG" />
 </p>
 
 ---
@@ -20,7 +22,6 @@
 - 🔬 ML Researcher  — building Generative AI pipelines with LangChain
 - 🚀 I build end-to-end AI products: from raw data → ML pipeline → deployed app
 - 💡 Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
-- 🧩 800+ DSA problems solved across LeetCode, CodeChef, and Codeforces
 - 📜 Certified: **Data Analysis with Python** (IBM) · **Neural Networks & Deep Learning** (DeepLearning.AI)
 
 ---
@@ -59,8 +60,8 @@
 
 | Project | What it does | Stack |
 |---|---|---|
-| [📰 **Fake News Detection**](https://github.com/DEVJHAWAR11/Fake-News-Detection) | Bidirectional LSTM classifier trained on 20K+ articles — detects misinformation with 99% accuracy using GloVe embeddings | Keras · TensorFlow · BiLSTM · GloVe · Streamlit |
-| [🤖 **Klypse**](https://github.com/DEVJHAWAR11/VidiqAI) | AI Chrome extension — ask any question about any YouTube video, get streamed answers in real time | FastAPI · LangChain · FAISS · Groq LLaMA · Docker |
+| [📄 **PolicyLens**](https://github.com/DEVJHAWAR11/PolicyLens) | End-to-end RAG system that parses insurance policies and answers nuanced queries using LLaMA — FastAPI backend, React frontend, FAISS vector store | FastAPI · LangChain · LLaMA · FAISS · React · Supabase |
+| [🔬 **Transformer From Scratch**](https://github.com/DEVJHAWAR11/Transformer-From-Scratch) | Full PyTorch implementation of "Attention is All You Need" — multi-head self-attention, positional encoding, encoder-decoder stack built from first principles | PyTorch · Self-Attention · NLP |
 | [🏠 **Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
 
 ---
@@ -79,10 +80,11 @@
 
 ---
 
-### 🏆 Competitive Programming
+### 🐍 Contribution Graph
 
-- **LeetCode** — Max Rating **1704** · 800+ problems solved
-- **CodeChef & Codeforces** — consistent problem solving across DP and Graph algorithms
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DEVJHAWAR11/DEVJHAWAR11/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
+</p>
 
 ---
 
