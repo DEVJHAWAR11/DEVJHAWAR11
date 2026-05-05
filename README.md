@@ -80,10 +80,10 @@
 
 ---
 
-### 🐍 Contribution Graph
+### 📈 Contribution Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DEVJHAWAR11/DEVJHAWAR11/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEVJHAWAR11&theme=tokyo-night&hide_border=true&area=true" />
 </p>
 
 ---
