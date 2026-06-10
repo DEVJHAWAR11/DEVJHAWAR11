@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/67194519/173735367-b75edb3b-61ec-4323-a10f-5d98e1d7b97a.gif" width="100%" alt="header animation" />
+  <img src="https://github.com/user-attachments/assets/4b2e233b-d247-4076-9850-17e16f9a6862" width="100%" alt="header animation" />
 </div>
 
 <h1 align="center">Hey, I'm Dev Jhawar 👋</h1>
