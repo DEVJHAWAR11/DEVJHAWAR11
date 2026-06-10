@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/4b2e233b-d247-4076-9850-17e16f9a6862" width="100%" alt="header animation" />
+  <img src="https://github.com/user-attachments/assets/db1f70a4-c525-4e6f-b55e-ac8fe4e991b8" width="100%" alt="header animation" />
 </div>
 
 <h1 align="center">Hey, I'm Dev Jhawar 👋</h1>
@@ -23,7 +23,7 @@
 
 ### 🧠 About Me
 
-- 🔬 ML Researcher — building Generative AI pipelines with LangChain & LLaMA
+- 🔬 ML Researcher — building Generative AI pipelines with LangChain & FastAPI
 - 🚀 I build end-to-end AI products: from raw data → ML pipeline → deployed app
 - 💡 Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
 - 🌐 Currently exploring **distributed systems, Redis caching, and advanced NLP**
