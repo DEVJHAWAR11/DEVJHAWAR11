@@ -23,11 +23,11 @@
 
 ### 🧠 About Me
 
-- 🔬 ML Researcher — building Generative AI pipelines with LangChain & FastAPI
-- 🚀 I build end-to-end AI products: from raw data → ML pipeline → deployed app
-- 💡 Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
-- 🌐 Currently exploring **distributed systems, Redis caching, and advanced NLP**
-- 📜 Certified: **Data Analysis with Python** (IBM) · **Neural Networks & Deep Learning** (DeepLearning.AI)
+-  ML Researcher — building Generative AI pipelines with LangChain & FastAPI
+-  I build end-to-end AI products: from raw data → ML pipeline → deployed app
+-  Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
+-  Currently exploring **distributed systems, Redis caching, and advanced NLP**
+-  Certified: **Data Analysis with Python** (IBM) · **Neural Networks & Deep Learning** (DeepLearning.AI)
 
 ---
 
@@ -82,11 +82,11 @@
 
 | Project | What it does | Stack |
 |---|---|---|
-| [📄 **PolicyLens**](https://github.com/DEVJHAWAR11/PolicyLens) | End-to-end RAG system that parses insurance policies and answers nuanced queries using Groq — FastAPI backend, React frontend, FAISS vector store | FastAPI · LangChain · Groq · FAISS · React · Supabase |
-| [⚡ **LLM Semantic Cache**](https://github.com/DEVJHAWAR11/llm-cache) | Semantic caching layer for LLM APIs — reduces redundant calls by embedding query similarity lookup against a Redis vector store before hitting the model | FastAPI · Redis · FAISS · OpenAI · Python |
-| [🌐 **C++ P2P Network**](https://github.com/DEVJHAWAR11/NetLink-P2P-Terminal-Messenger) | Peer-to-peer file sharing system built from scratch in C++ — custom socket layer, node discovery, chunked transfer protocol | C++ · Sockets · TCP/IP · Multithreading |
-| [🔬 **Transformer From Scratch**](https://github.com/DEVJHAWAR11/pytorch-transformer-from-scratch) | Full PyTorch implementation of "Attention is All You Need" — multi-head self-attention, positional encoding, encoder-decoder stack built from first principles | PyTorch · Self-Attention · NLP |
-| [🏠 **Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
+| [ **PolicyLens**](https://github.com/DEVJHAWAR11/PolicyLens) | End-to-end RAG system that parses insurance policies and answers nuanced queries using Groq — FastAPI backend, React frontend, FAISS vector store | FastAPI · LangChain · Groq · FAISS · React · Supabase |
+| [ **LLM Semantic Cache**](https://github.com/DEVJHAWAR11/llm-cache) | Semantic caching layer for LLM APIs — reduces redundant calls by embedding query similarity lookup against a Redis vector store before hitting the model | FastAPI · Redis · FAISS · OpenAI · Python |
+| [ **C++ P2P Network**](https://github.com/DEVJHAWAR11/NetLink-P2P-Terminal-Messenger) | Peer-to-peer file sharing system built from scratch in C++ — custom socket layer, node discovery, chunked transfer protocol | C++ · Sockets · TCP/IP · Multithreading |
+| [ **Transformer From Scratch**](https://github.com/DEVJHAWAR11/pytorch-transformer-from-scratch) | Full PyTorch implementation of "Attention is All You Need" — multi-head self-attention, positional encoding, encoder-decoder stack built from first principles | PyTorch · Self-Attention · NLP |
+| [ **Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
 
 
 ---
