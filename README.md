@@ -1,100 +1,152 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/db1f70a4-c525-4e6f-b55e-ac8fe4e991b8" width="100%" alt="header animation" />
+
+<a href="https://devjhawar.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+    <img src="assets/hero-light.svg" width="100%" alt="Dev Jhawar — building AI systems that work in the real world" />
+  </picture>
+</a>
+
+<sub>
+<a href="https://devjhawar.com">Portfolio</a> &nbsp;/&nbsp;
+<a href="https://resume-drab-six.vercel.app">Résumé</a> &nbsp;/&nbsp;
+<a href="https://linkedin.com/in/dev-jhawar11">LinkedIn</a> &nbsp;/&nbsp;
+<a href="mailto:dev.jhawar.cs@gmail.com">Email</a>
+</sub>
+
 </div>
 
-<h1 align="center">Hey, I'm Dev Jhawar 👋</h1>
+<br/>
 
-<p align="center">
-  <b>ML Engineer · Backend Developer · AI Builder</b><br/>
-  KIIT University, CSE &nbsp;|&nbsp; Bhubaneswar, India
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/dev-jhawar11"><img src="https://img.shields.io/badge/LinkedIn-dev--jhawar11-0077B5?style=flat&logo=linkedin" /></a>
-  &nbsp;
-  <a href="mailto:dev.jhawar.cs@gmail.com"><img src="https://img.shields.io/badge/Gmail-dev.jhawar.cs-D14836?style=flat&logo=gmail&logoColor=white" /></a>
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=58A6FF&center=true&vCenter=true&width=480&lines=ML+Engineer+%7C+Backend+Developer+%7C+AI+Builder;Building+real-world+AI+products+%F0%9F%9A%80;RAG+systems+%7C+LLMs+%7C+FastAPI+%7C+PyTorch" alt="Typing SVG" />
-</p>
-
----
-
-### 🧠 About Me
-
--  ML Researcher — building Generative AI pipelines with LangChain & FastAPI
--  I build end-to-end AI products: from raw data → ML pipeline → deployed app
--  Interested in **LLMs, RAG systems, backend APIs, and real-world ML deployment**
--  Currently exploring **distributed systems, Redis caching, and advanced NLP**
--  Certified: **Data Analysis with Python** (IBM) · **Neural Networks & Deep Learning** (DeepLearning.AI)
-
----
-
-### 🛠️ Tech Stack
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
-**ML & AI**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat&logo=chainlink&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat&logo=meta&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
-
-**Backend & APIs**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat&logo=socket.io&logoColor=white)
-
-**DevOps & Tools**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-
----
-
-### 🚀 Featured Projects
-
-| Project | What it does | Stack |
-|---|---|---|
-| [ **PolicyLens**](https://github.com/DEVJHAWAR11/PolicyLens) | End-to-end RAG system that parses insurance policies and answers nuanced queries using Groq — FastAPI backend, React frontend, FAISS vector store | FastAPI · LangChain · Groq · FAISS · React · Supabase |
-| [ **LLM Semantic Cache**](https://github.com/DEVJHAWAR11/llm-cache) | Semantic caching layer for LLM APIs — reduces redundant calls by embedding query similarity lookup against a Redis vector store before hitting the model | FastAPI · Redis · FAISS · OpenAI · Python |
-| [ **C++ P2P Network**](https://github.com/DEVJHAWAR11/NetLink-P2P-Terminal-Messenger) | Peer-to-peer file sharing system built from scratch in C++ — custom socket layer, node discovery, chunked transfer protocol | C++ · Sockets · TCP/IP · Multithreading |
-| [ **Transformer From Scratch**](https://github.com/DEVJHAWAR11/pytorch-transformer-from-scratch) | Full PyTorch implementation of "Attention is All You Need" — multi-head self-attention, positional encoding, encoder-decoder stack built from first principles | PyTorch · Self-Attention · NLP |
-| [ **Real Estate AI Suite**](https://github.com/DEVJHAWAR11/Real_Estate) | End-to-end ML platform — price prediction (R²=0.92), analytics dashboard, property recommender | Scikit-learn · Streamlit · Plotly · Docker |
-
-
----
-
-<p align="center">
-  <i>"Build things that work in the real world, not just in notebooks."</i>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-featured-dark.svg" />
+  <img src="assets/h-featured-light.svg" width="100%" alt="01 — Featured builds" />
+</picture>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" alt="footer decoration" />
+
+<a href="https://github.com/DEVJHAWAR11/WatchTower">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/card-watchtower-dark.svg" />
+    <img src="assets/card-watchtower-light.svg" width="100%" alt="WatchTower — describe what to watch on the web; AI agents check, judge and notify" />
+  </picture>
+</a>
+
+<sub><b>WatchTower</b> &nbsp;/&nbsp; <a href="https://watch-tower-seven.vercel.app">live app</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/WatchTower">source</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/WatchTower/blob/main/docs/ARCHITECTURE.md">architecture</a></sub>
+
+<br/><br/>
+
+<a href="https://github.com/DEVJHAWAR11/GridMind"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-gridmind-dark.svg" /><img src="assets/card-gridmind-light.svg" width="49%" alt="GridMind — a spreadsheet that researches for you" /></picture></a>
+<a href="https://github.com/arpanz/policylens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-policylens-dark.svg" /><img src="assets/card-policylens-light.svg" width="49%" alt="PolicyLens — ask questions of any insurance policy PDF" /></picture></a>
+
+<sub><b>GridMind</b> &nbsp;/&nbsp; <a href="https://grid-mind-tan.vercel.app">live</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/GridMind">source</a> &emsp;&emsp; <b>PolicyLens</b> &nbsp;/&nbsp; <a href="https://policylens-devj-web.onrender.com/">live</a> &nbsp;/&nbsp; <a href="https://github.com/arpanz/policylens">source</a> &nbsp;<i>(team project, I built the RAG engine)</i></sub>
+
+<br/><br/>
+
+<a href="https://github.com/DEVJHAWAR11/CaseCompass"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-casecompass-dark.svg" /><img src="assets/card-casecompass-light.svg" width="49%" alt="CaseCompass — see how consumer commissions decided cases like yours" /></picture></a>
+<a href="https://github.com/DEVJHAWAR11/Tidyflow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-tidyflow-dark.svg" /><img src="assets/card-tidyflow-light.svg" width="49%" alt="TidyFlow — AI that organises a messy folder, with your approval" /></picture></a>
+
+<sub><b>CaseCompass</b> &nbsp;/&nbsp; <a href="https://case-compass-zeta.vercel.app">live</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/CaseCompass">source</a> &emsp;&emsp; <b>TidyFlow</b> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/Tidyflow/releases/latest">download</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/Tidyflow">source</a></sub>
+
+<br/><br/>
+
+<a href="https://github.com/DEVJHAWAR11/pytorch-transformer-from-scratch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-transformer-dark.svg" /><img src="assets/card-transformer-light.svg" width="49%" alt="Transformer from scratch in PyTorch" /></picture></a>
+<a href="https://github.com/DEVJHAWAR11/PennyPilot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pennypilot-dark.svg" /><img src="assets/card-pennypilot-light.svg" width="49%" alt="PennyPilot — agentic expense tracker on Telegram" /></picture></a>
+
+<sub><b>Transformer</b> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/pytorch-transformer-from-scratch">source</a> &emsp;&emsp; <b>PennyPilot</b> &nbsp;/&nbsp; <a href="https://t.me/PennyPilot_bot">try the bot</a> &nbsp;/&nbsp; <a href="https://github.com/DEVJHAWAR11/PennyPilot">source</a></sub>
+
+</div>
+
+<br/>
+
+<details>
+<summary><b>More builds</b></summary>
+<br/>
+
+| Project | What it does |
+|---|---|
+| [LLM Semantic Cache](https://github.com/DEVJHAWAR11/LLM_Semantic_Cache) | Caching layer for LLM calls on Redis and Jina embeddings. Similar questions come back in milliseconds instead of seconds. |
+| [Klypse](https://github.com/DEVJHAWAR11/Klypse) | Chrome extension that answers questions about any YouTube video, built on FastAPI, LangChain, FAISS and Groq. |
+| [NetLink P2P](https://github.com/DEVJHAWAR11/NetLink-P2P-Terminal-Messenger) | Terminal messenger in pure C++ over raw TCP sockets and POSIX threads. |
+| [ZombieKill](https://github.com/DEVJHAWAR11/ZombieKill) | Drag a locked file onto it and it kills whatever process is holding it. C++. |
+| [LocalSqueeze](https://github.com/DEVJHAWAR11/LocalSqueeze) | Shrinks photos and videos to an exact target size, fully offline. |
+| [Real Estate AI](https://github.com/DEVJHAWAR11/Real_Estate) | Price prediction (R² 0.92), analytics and a recommender. [Live on Streamlit](https://realestate-analysis-ml.streamlit.app/). |
+| [Fraud Detector](https://github.com/DEVJHAWAR11/Transaction-Fraud-Detector) | Model that flags fraudulent transactions. |
+
+</details>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-opensource-dark.svg" />
+  <img src="assets/h-opensource-light.svg" width="100%" alt="02 — Open source" />
+</picture>
+
+<a href="https://github.com/search?q=author%3ADEVJHAWAR11+is%3Apr+is%3Amerged+-user%3ADEVJHAWAR11&type=pullrequests">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/opensource-dark.svg" />
+    <img src="assets/opensource-light.svg" width="100%" alt="Pull requests merged into open source projects" />
+  </picture>
+</a>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-toolchain-dark.svg" />
+  <img src="assets/h-toolchain-light.svg" width="100%" alt="03 — Toolchain" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/toolchain-dark.svg" />
+  <img src="assets/toolchain-light.svg" width="100%" alt="Toolchain: AI/ML, LLM systems, backend, data, infra, languages, frontend" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-telemetry-dark.svg" />
+  <img src="assets/h-telemetry-light.svg" width="100%" alt="04 — Telemetry" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/telemetry-dark.svg" />
+  <img src="assets/telemetry-light.svg" width="100%" alt="GitHub stats" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-now-dark.svg" />
+  <img src="assets/h-now-light.svg" width="100%" alt="05 — Right now" />
+</picture>
+
+```yaml
+building:      WatchTower           # web-watching agents that only ping you when it matters
+contributing:  [prefect, livekit-agents, pipecat, txtai, deer-flow]
+exploring:     [distributed systems, agent orchestration, RAG evaluation]
+ask_me_about:  [RAG that cites sources, FastAPI at scale, Redis queues, LangGraph]
+believes:      "build things that work in the real world, not just in notebooks"
+```
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-contact-dark.svg" />
+  <img src="assets/h-contact-light.svg" width="100%" alt="06 — Contact" />
+</picture>
+
+<a href="mailto:dev.jhawar.cs@gmail.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
+    <img src="assets/footer-light.svg" width="100%" alt="Contact: dev.jhawar.cs@gmail.com · linkedin.com/in/dev-jhawar11 · devjhawar.com" />
+  </picture>
+</a>
+
+<div align="center">
+<sub>
+<a href="mailto:dev.jhawar.cs@gmail.com">dev.jhawar.cs@gmail.com</a> &nbsp;/&nbsp;
+<a href="https://linkedin.com/in/dev-jhawar11">LinkedIn</a> &nbsp;/&nbsp;
+<a href="https://devjhawar.com">devjhawar.com</a> &nbsp;/&nbsp;
+<a href="https://resume-drab-six.vercel.app">Résumé</a>
+</sub>
 </div>
