@@ -369,7 +369,8 @@
   0,
   0,
   0,
-  2
+  2,
+  0
  ],
  "repos": 21,
  "langs": [
@@ -401,27 +402,27 @@
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 84921,
+   "stars": 84965,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24108,
+   "stars": 24110,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17022,
+   "stars": 17046,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17022,
+   "stars": 17046,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15068,
+   "stars": 15079,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
@@ -436,7 +437,7 @@
   },
   {
    "repo": "truera/trulens",
-   "stars": 3625,
+   "stars": 3628,
    "title": "feat(feedback): add role adherence conversation metric"
   },
   {
