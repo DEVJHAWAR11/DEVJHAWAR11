@@ -1,6 +1,6 @@
 {
- "contributions": 913,
- "commits": 668,
+ "contributions": 918,
+ "commits": 669,
  "longest_streak": 12,
  "days": [
   0,
@@ -371,6 +371,7 @@
   3,
   18,
   1,
+  5,
   0
  ],
  "repos": 21,
@@ -403,27 +404,27 @@
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 85011,
+   "stars": 85047,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24116,
+   "stars": 24119,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17063,
+   "stars": 17087,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17063,
+   "stars": 17087,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15092,
+   "stars": 15108,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
@@ -443,7 +444,7 @@
   },
   {
    "repo": "collective/icalendar",
-   "stars": 1186,
+   "stars": 1187,
    "title": "Add vCalAddress.uri property"
   },
   {
