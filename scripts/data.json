@@ -1,6 +1,6 @@
 {
- "contributions": 918,
- "commits": 669,
+ "contributions": 938,
+ "commits": 672,
  "longest_streak": 12,
  "days": [
   0,
@@ -370,29 +370,30 @@
   0,
   0,
   0,
-  0
+  16,
+  4
  ],
  "repos": 21,
  "langs": [
   [
    "Python",
-   47.6
+   47.3
   ],
   [
    "TypeScript",
-   37.9
+   38.8
   ],
   [
    "Astro",
-   7.0
+   6.7
   ],
   [
    "Svelte",
-   5.4
+   5.2
   ],
   [
    "JavaScript",
-   0.9
+   0.8
   ],
   [
    "C++",
@@ -402,42 +403,42 @@
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 85235,
+   "stars": 85265,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24146,
+   "stars": 24151,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17187,
+   "stars": 17212,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17187,
+   "stars": 17212,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15170,
+   "stars": 15191,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13285,
+   "stars": 13316,
    "title": "Mark deleted ids in a single pass in Terms.delete"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13285,
+   "stars": 13316,
    "title": "Select top results instead of sorting every score in numpy and torch ANN search"
   },
   {
    "repo": "truera/trulens",
-   "stars": 3638,
+   "stars": 3640,
    "title": "feat(feedback): add role adherence conversation metric"
   },
   {
@@ -464,7 +465,22 @@
    "repo": "arpanz/policylens",
    "stars": 1,
    "title": "feat: add POST/GET /ingest/summary/{policy_id} for auto-generated pol…"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Point download links at the Tidyflow releases page"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Rebuild the site around the current app"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Redesign hero and add light/dark theme"
   }
  ],
- "opened": 19
+ "opened": 22
 }
