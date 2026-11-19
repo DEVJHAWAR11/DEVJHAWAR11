@@ -1,5 +1,5 @@
 {
- "contributions": 982,
+ "contributions": 983,
  "commits": 672,
  "longest_streak": 12,
  "days": [
@@ -370,7 +370,8 @@
   2,
   26,
   8,
-  4
+  5,
+  0
  ],
  "repos": 21,
  "langs": [
@@ -402,42 +403,42 @@
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 85470,
+   "stars": 85514,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24179,
+   "stars": 24184,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17319,
+   "stars": 17330,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17319,
+   "stars": 17330,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15274,
+   "stars": 15280,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13618,
+   "stars": 13644,
    "title": "Mark deleted ids in a single pass in Terms.delete"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13618,
+   "stars": 13644,
    "title": "Select top results instead of sorting every score in numpy and torch ANN search"
   },
   {
    "repo": "truera/trulens",
-   "stars": 3660,
+   "stars": 3661,
    "title": "feat(feedback): add role adherence conversation metric"
   },
   {
