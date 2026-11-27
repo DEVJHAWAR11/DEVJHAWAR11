@@ -1,5 +1,5 @@
 {
- "contributions": 1041,
+ "contributions": 1044,
  "commits": 701,
  "longest_streak": 12,
  "days": [
@@ -372,21 +372,21 @@
   0,
   4,
   10,
-  5
+  8
  ],
  "repos": 21,
  "langs": [
   [
    "Python",
-   49.1
+   49.2
   ],
   [
    "TypeScript",
-   38.4
+   38.3
   ],
   [
    "Astro",
-   6.1
+   6.0
   ],
   [
    "Svelte",
@@ -404,27 +404,27 @@
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 85861,
+   "stars": 85866,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24250,
+   "stars": 24251,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17465,
+   "stars": 17469,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17465,
+   "stars": 17469,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15359,
+   "stars": 15361,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
