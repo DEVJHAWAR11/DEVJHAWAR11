@@ -2,6 +2,7 @@
 
 With GITHUB_TOKEN (or GH_TOKEN) set, fetches fresh data and caches it in scripts/data.json.
 Without a token, the cached copy is used so the graphics can still be rebuilt offline.
+Posts come from the public dev.to API; if that fails the cached list is kept.
 """
 import json
 import os
@@ -9,6 +10,7 @@ import urllib.request
 from pathlib import Path
 
 USER = "DEVJHAWAR11"
+DEVTO = "dev_jhawar"
 CACHE = Path(__file__).resolve().parent / "data.json"
 SKIP_LANGS = {"Jupyter Notebook", "HTML", "CSS", "Batchfile", "PowerShell", "Shell", "Dockerfile", "TSQL"}
 
@@ -72,10 +74,23 @@ def _fetch(token):
             "merged": merged, "opened": d["opened"]["issueCount"]}
 
 
+def _articles():
+    req = urllib.request.Request(f"https://dev.to/api/articles?username={DEVTO}&per_page=30",
+                                 headers={"User-Agent": "profile-readme-build", "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        raw = json.load(r)
+    return [{"title": a["title"], "url": a["url"], "minutes": a["reading_time_minutes"],
+             "reactions": a["public_reactions_count"], "comments": a["comments_count"]} for a in raw]
+
+
 def load():
+    cached = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if token:
-        data = _fetch(token)
-        CACHE.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        return data
-    return json.loads(CACHE.read_text(encoding="utf-8"))
+    data = _fetch(token) if token else dict(cached)
+    try:
+        data["articles"] = _articles()
+    except Exception as e:  # dev.to being down shouldn't block the GitHub refresh
+        print(f"dev.to fetch failed, keeping cached posts: {e}")
+        data["articles"] = cached.get("articles", [])
+    CACHE.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return data

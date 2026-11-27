@@ -1,8 +1,9 @@
 """Builds every graphic in README.md, light and dark. Run: python scripts/build.py"""
 import math
+import re
 
 from data import load
-from kit import (THEMES, button, cursor, doc, esc, frame, halftone_disc, halftone_sphere, hline,
+from kit import (ROOT, THEMES, button, cursor, doc, esc, frame, halftone_disc, halftone_sphere, hline,
                  text, vline, write)
 
 
@@ -407,6 +408,152 @@ def opensource(t, d):
     return doc(W, H, t, "".join(b), "", f"{n} pull requests merged into {len(by_repo)} open source projects")
 
 
+# --------------------------------------------------------------------------- streamed text
+
+def stream_css(dur):
+    """Words fade in one after another, hold, then clear, like a model streaming tokens."""
+    return f".w{{fill-opacity:0;animation:w {dur}s linear infinite}}@keyframes w{{0%{{fill-opacity:0}}2%,90%{{fill-opacity:1}}95%,100%{{fill-opacity:0}}}}"
+
+
+def streamed(x, y, s, t, size, cls, color, start, step=.09):
+    """A <text> whose words stream in from `start` seconds. Returns (svg, time the last word lands)."""
+    words = s.split(" ")
+    spans = "".join(f'<tspan class="w" style="animation-delay:{start + i * step:.2f}s">{esc(w)}{" " if i < len(words) - 1 else ""}</tspan>'
+                    for i, w in enumerate(words))
+    svg = (f'<text x="{x}" y="{y}" class="{cls}" font-size="{size}" fill="{t[color]}" xml:space="preserve">{spans}</text>')
+    return svg, start + len(words) * step
+
+
+# --------------------------------------------------------------------------- review notes
+
+REVIEWS = [("markbackman", "pipecat-ai/pipecat", "Thanks @DEVJHAWAR11, this is the right fix.",
+            "On bounding websocket sends in the shared connection class, so a peer",
+            "that stops reading can't stall any service built on it."),
+           ("davidmezzetti", "neuml/txtai", "LGTM - Thank you!", "On selecting top results instead of sorting every score.", ""),
+           ("niccokunzmann", "collective/icalendar", "Thank you for your contribution!", "On adding the vCalAddress.uri property.", "")]
+
+
+def reviews(t):
+    W, H = 1000, 318
+    dur = 14
+    b = [frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 10] Review notes", "", "From the maintainers", live=False),
+         vline(600, 46, H, t), hline(600, W, 182, t)]
+
+    who, repo, quote, ctx1, ctx2 = REVIEWS[0]
+    b.append(f'<text x="22" y="150" class="d" font-size="120" fill="{t["accent"]}">“</text>')
+    first, second = "Thanks @DEVJHAWAR11,", "this is the right fix."
+    s1, t1 = streamed(30, 170, first, t, 38, "d", "ink", 0, .22)
+    s2, t2 = streamed(30, 216, second, t, 38, "d", "ink", t1 + .1, .22)
+    b += [s1, s2]
+    b.append(f'<rect class="blink" x="{36 + len(second) * 14:.0f}" y="188" width="3" height="34" fill="{t["accent"]}"/>')
+    b.append(text(32, 262, f"@{who} · {repo}", t, 11, cls="m up", color="ink"))
+    b.append(text(32, 284, ctx1, t, 13.5, cls="s") + text(32, 302, ctx2, t, 13.5, cls="s"))
+
+    for k, (who, repo, quote, ctx, _) in enumerate(REVIEWS[1:]):
+        y0 = 46 + k * 136
+        b.append(text(626, y0 + 34, f"@{who}", t, 11, cls="m up", color="ink") + text(976, y0 + 34, repo, t, 11, cls="m", anchor="end"))
+        s, _ = streamed(626, y0 + 76, "“" + quote + "”", t, 24, "d", "ink", t2 + .6 + k * 1.2, .2)
+        b.append(s)
+        b.append(text(626, y0 + 104, ctx, t, 12.5, cls="s"))
+        b.append(f'<rect x="626" y="{y0 + 114}" width="7" height="7" fill="{t["accent"]}"/>'
+                 + text(640, y0 + 121, "Merged", t, 10, cls="m up", color="accent"))
+    return doc(W, H, t, "".join(b), stream_css(dur),
+               "What maintainers said: " + " / ".join(f"@{w} on {r}: {q}" for w, r, q, *_ in REVIEWS))
+
+
+# --------------------------------------------------------------------------- writing
+
+def _tokens(title):
+    out = []
+    for w in title.replace(",", " ,").replace(":", " :").replace(".", " .").split():
+        while len(w) > 6:
+            out.append(w[:5])
+            w = w[5:]
+        out.append(w)
+    return out
+
+
+def writing(t, d):
+    posts = d.get("articles", [])
+    W, top, rh = 1000, 108, 40
+    H = top + len(posts) * rh + 10
+    # token tape: the post titles, chopped into tokens, scrolling past
+    toks = [tok for p in posts[:4] for tok in _tokens(p["title"]) + ["\\n"]]
+    tape, x = [], 0
+    for i, tok in enumerate(toks):
+        w = len(tok) * 6.9 + 12
+        hot = i % 5 == 2
+        tape.append(f'<rect x="{x + .5:.1f}" y="62.5" width="{w - 1:.1f}" height="24" '
+                    + (f'fill="{t["accent"]}"/>' if hot else f'stroke="{t["line"]}"/>')
+                    + text(round(x + w / 2, 1), 79, tok, t, 11, cls="m", color="on_accent" if hot else "ink", anchor="middle"))
+        x += w + 5
+    span = x
+    css = (stream_css(12) +
+           f".tape{{animation:tape {span / 38:.0f}s linear infinite}}@keyframes tape{{to{{transform:translateX(-{span:.1f}px)}}}}"
+           ".rd{opacity:0;animation:rd 9s steps(1) infinite}@keyframes rd{0%{opacity:0}4%,84%{opacity:1}90%,100%{opacity:0}}")
+    b = [frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 11] Writing", "dev.to/dev_jhawar", f"{len(posts)} posts", live=False),
+         f'<clipPath id="tw"><rect x="150" y="56" width="{W - 151}" height="40"/></clipPath>',
+         f'<g clip-path="url(#tw)"><g class="tape">'
+         f'<g transform="translate(150 0)">{"".join(tape)}<g transform="translate({span:.1f} 0)">{"".join(tape)}</g></g></g></g>',
+         text(24, 79, "Tokenizer", t, 11, cls="m up"),
+         f'<rect x="118" y="70" width="7" height="7" fill="{t["accent"]}" class="blink"/>',
+         hline(0, W, top - 4, t)]
+    for i, p in enumerate(posts):
+        y = top + i * rh
+        title = p["title"] if len(p["title"]) <= 100 else p["title"][:97].rstrip() + "..."
+        row = (text(24, y + 25, f"{i + 1:02d}", t, 11, cls="m", color="accent")
+               + text(64, y + 25, title, t, 15, cls="s", color="ink")
+               + text(W - 24, y + 25, f"{p['minutes']} min", t, 11, cls="m up", anchor="end"))
+        mins = min(p["minutes"], 10)
+        for k in range(mins):
+            sx = W - 92 - (mins - k) * 10
+            row += (f'<rect x="{sx}" y="{y + 16}" width="7" height="7" fill="{t["faint"]}"/>'
+                    f'<rect class="rd{" still" if k == 0 else ""}" style="animation-delay:{i * .5 + k * .3:.1f}s" x="{sx}" y="{y + 16}" width="7" height="7" fill="{t["accent"]}"/>')
+        if i:
+            row = hline(24, W - 24, y, t, color="faint") + row
+        b.append(stagger(row, .1 + i * .05))
+    return doc(W, H, t, "".join(b), css, f"{len(posts)} posts on dev.to: " + "; ".join(p["title"] for p in posts))
+
+
+# --------------------------------------------------------------------------- right now
+
+def now(t, d):
+    W = 1000
+    upstream = []
+    for p in d["merged"]:
+        n = p["repo"].split("/")[1].replace("-core", "")
+        n = "livekit agents" if n == "agents" else n
+        if n not in upstream and p["stars"] >= 100:
+            upstream.append(n)
+    rows = [("building", "WatchTower: web-watching agents that only ping you when it matters"),
+            ("contributing", " · ".join(upstream[:6])),
+            ("exploring", "distributed systems · agent orchestration · RAG evaluation"),
+            ("writing", "LLM internals and what agents really cost, on dev.to"),
+            ("ask_me_about", "RAG that cites sources · FastAPI at scale · Redis queues · LangGraph"),
+            ("believes", "build things that work in the real world, not just in notebooks")]
+    top, rh = 116, 36
+    H = top + len(rows) * rh + 60
+    dur = 16
+    b = [frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 14] ~/now.yaml", "", "Session open", live=True),
+         text(24, 86, "$", t, 14, cls="m", color="accent")]
+    s, at = streamed(44, 86, "cat ~/now.yaml", t, 14, "m", "ink", 0, .25)
+    b.append(s)
+    at += .3
+    for i, (k, v) in enumerate(rows):
+        y = top + i * rh + 22
+        b.append(hline(24, W - 24, y - 24, t, color="faint"))
+        b.append(text(24, y, f"{i + 1:02d}", t, 11, cls="m", color="muted"))
+        ks, _ = streamed(64, y, f"{k}:", t, 13, "m", "accent", at, 0)
+        vs, at = streamed(232, y, v, t, 16, "s", "ink", at + .15, .07)
+        b += [ks, vs]
+        at += .25
+    y = top + len(rows) * rh + 34
+    b.append(hline(24, W - 24, y - 26, t, color="faint"))
+    b.append(text(24, y, "$", t, 14, cls="m", color="accent")
+             + f'<rect class="blink" x="44" y="{y - 13}" width="8" height="16" fill="{t["ink"]}"/>')
+    return doc(W, H, t, "".join(b), stream_css(dur), "Right now: " + "; ".join(f"{k}: {v}" for k, v in rows))
+
+
 # --------------------------------------------------------------------------- toolchain
 
 STACK = [
@@ -424,7 +571,7 @@ def toolchain(t):
     W, rh, top = 1000, 46, 46
     H = top + len(STACK) * rh + 20
     css = f".sel{{animation:sel {len(STACK) * 2}s steps({len(STACK)}) infinite}}@keyframes sel{{to{{transform:translateY({len(STACK) * rh}px)}}}}"
-    b = [frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 10] Toolchain", "", f"{len(STACK)} groups", live=False),
+    b = [frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 12] Toolchain", "", f"{len(STACK)} groups", live=False),
          f'<g class="sel"><rect x="1" y="{top + 10}" width="{W - 2}" height="{rh}" fill="{t["faint"]}"/>'
          f'<rect x="1" y="{top + 10}" width="3" height="{rh}" fill="{t["accent"]}"/></g>']
     for i, (k, v) in enumerate(STACK):
@@ -448,7 +595,7 @@ def telemetry(t, d):
     b = [f'<defs><pattern id="ph" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
          f'<line x1="0" y1="0" x2="0" y2="5" stroke="{t["ink"]}" stroke-width="1.2"/></pattern>'
          f'<pattern id="pd" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".9" fill="{t["ink"]}"/></pattern></defs>',
-         frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 11] Telemetry", "", "Refreshed daily")]
+         frame(0, 0, W, H, t), meta_row(t, W, "[FIG. 13] Telemetry", "", "Refreshed daily")]
     tw = W / len(tiles)
     for i, (v, label) in enumerate(tiles):
         x = i * tw
@@ -504,8 +651,8 @@ def footer(t):
          f'<text x="42" y="56" class="d" font-size="24" fill="{t["ink"]}">Dev Jhawar</text>',
          text(0, 96, "AI engineer and backend developer. I build", t, 14, cls="s"),
          text(0, 116, "agents, RAG systems and the infra under them.", t, 14, cls="s")]
-    cols = [(470, "[Contact]", ["dev.jhawar.cs@gmail.com", "linkedin/dev-jhawar11"]),
-            (690, "[Elsewhere]", ["devjhawar.com", "github/DEVJHAWAR11", "Résumé"]),
+    cols = [(470, "[Contact]", ["dev.jhawar.cs@gmail.com", "linkedin/dev-jhawar11", "x.com/dev_eloper__"]),
+            (690, "[Elsewhere]", ["devjhawar.com", "dev.to/dev_jhawar", "leetcode/devjhawar", "codeforces/devjhawar11"]),
             (860, "[Status]", ["Open to roles", "Bhubaneswar, IN", "UTC +5:30"])]
     for x, head, items in cols:
         b.append(text(x, 50, head, t, 12, cls="m", color="accent"))
@@ -522,10 +669,11 @@ def footer(t):
 
 HEADERS = [("featured", "01", "Featured builds", "07 entries"),
            ("opensource", "02", "Open source", None),
-           ("toolchain", "03", "Toolchain", "What I build with"),
-           ("telemetry", "04", "Telemetry", "Live from GitHub"),
-           ("now", "05", "Right now", "~/now.yaml"),
-           ("contact", "06", "Contact", "Say hello")]
+           ("writing", "03", "Writing", "On dev.to"),
+           ("toolchain", "04", "Toolchain", "What I build with"),
+           ("telemetry", "05", "Telemetry", "Live from GitHub"),
+           ("now", "06", "Right now", "~/now.yaml"),
+           ("contact", "07", "Contact", "Say hello")]
 
 
 def main():
@@ -538,10 +686,24 @@ def main():
         for slug, num, fig, title, status, desc, stack, links, art, art_y in CARDS:
             write(f"card-{slug}", name, card(t, num, fig, title, status, desc, stack, links, art, art_y))
         write("opensource", name, opensource(t, d))
+        write("reviews", name, reviews(t))
+        write("writing", name, writing(t, d))
+        write("now", name, now(t, d))
         write("toolchain", name, toolchain(t))
         write("telemetry", name, telemetry(t, d))
         write("footer", name, footer(t))
-    print(f"built: {len(d['merged'])} merged PRs, {d['opened']} opened")
+    readme_posts(d.get("articles", []))
+    print(f"built: {len(d['merged'])} merged PRs, {d['opened']} opened, {len(d.get('articles', []))} posts")
+
+
+def readme_posts(posts):
+    """Keeps the list of post links in README.md in step with the Writing graphic."""
+    path = ROOT / "README.md"
+    md = path.read_text(encoding="utf-8")
+    lines = "\n".join(f"{i + 1:02d} &nbsp; [{p['title']}]({p['url']}) &nbsp;<sub>{p['minutes']} min</sub><br/>" for i, p in enumerate(posts))
+    new = re.sub(r"(<!-- posts:start -->\n).*?(\n?<!-- posts:end -->)", lambda m: m.group(1) + lines + "\n<!-- posts:end -->", md, flags=re.S)
+    if new != md:
+        path.write_text(new, encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

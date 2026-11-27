@@ -92,8 +92,45 @@
 <br/><br/>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/reviews-dark.svg" />
+  <img src="assets/reviews-light.svg" width="100%" alt="What maintainers said in review" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-writing-dark.svg" />
+  <img src="assets/h-writing-light.svg" width="100%" alt="03 — Writing" />
+</picture>
+
+<a href="https://dev.to/dev_jhawar">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg" />
+    <img src="assets/writing-light.svg" width="100%" alt="Posts on dev.to about LLM internals and agent costs" />
+  </picture>
+</a>
+
+<details>
+<summary><b>Read the posts</b></summary>
+<br/>
+
+<!-- posts:start -->
+01 &nbsp; [Bigger AI models aren't always better: how a 70B model beat a 280B one by reading more](https://dev.to/dev_jhawar/bigger-ai-models-arent-always-better-how-a-70b-model-beat-a-280b-one-by-reading-more-2jmh) &nbsp;<sub>6 min</sub><br/>
+02 &nbsp; [What it actually costs to train an LLM: GPUs, days and dollars, worked out step by step](https://dev.to/dev_jhawar/what-it-actually-costs-to-train-an-llm-gpus-days-and-dollars-worked-out-step-by-step-1g5j) &nbsp;<sub>6 min</sub><br/>
+03 &nbsp; [Why Meta trained a small 8B model on 15 trillion tokens, and why that's cheaper than it sounds](https://dev.to/dev_jhawar/why-meta-trained-a-small-8b-model-on-15-trillion-tokens-and-why-thats-cheaper-than-it-sounds-1oep) &nbsp;<sub>5 min</sub><br/>
+04 &nbsp; [The KV cache is eating your GPU. MQA and GQA are how models fight back](https://dev.to/dev_jhawar/the-kv-cache-is-eating-your-gpu-mqa-and-gqa-are-how-models-fight-back-3809) &nbsp;<sub>3 min</sub><br/>
+05 &nbsp; [Tokenization is why your agent bill looks weird](https://dev.to/dev_jhawar/tokenization-is-why-your-agent-bill-looks-weird-4n47) &nbsp;<sub>4 min</sub><br/>
+06 &nbsp; [Why your agent gets slower and pricier with every tool call](https://dev.to/dev_jhawar/why-your-agent-gets-slower-and-pricier-with-every-tool-call-1l6n) &nbsp;<sub>5 min</sub><br/>
+07 &nbsp; [Running 100 agents on a free tier (Groq 30 RPM, Tavily credits)](https://dev.to/dev_jhawar/running-100-agents-on-a-free-tier-groq-30-rpm-tavily-credits-pgi) &nbsp;<sub>4 min</sub><br/>
+<!-- posts:end -->
+
+</details>
+
+<br/><br/>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-toolchain-dark.svg" />
-  <img src="assets/h-toolchain-light.svg" width="100%" alt="03 — Toolchain" />
+  <img src="assets/h-toolchain-light.svg" width="100%" alt="04 — Toolchain" />
 </picture>
 
 <picture>
@@ -105,7 +142,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-telemetry-dark.svg" />
-  <img src="assets/h-telemetry-light.svg" width="100%" alt="04 — Telemetry" />
+  <img src="assets/h-telemetry-light.svg" width="100%" alt="05 — Telemetry" />
 </picture>
 
 <picture>
@@ -117,28 +154,25 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-now-dark.svg" />
-  <img src="assets/h-now-light.svg" width="100%" alt="05 — Right now" />
+  <img src="assets/h-now-light.svg" width="100%" alt="06 — Right now" />
 </picture>
 
-```yaml
-building:      WatchTower           # web-watching agents that only ping you when it matters
-contributing:  [prefect, livekit-agents, pipecat, txtai, deer-flow]
-exploring:     [distributed systems, agent orchestration, RAG evaluation]
-ask_me_about:  [RAG that cites sources, FastAPI at scale, Redis queues, LangGraph]
-believes:      "build things that work in the real world, not just in notebooks"
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg" />
+  <img src="assets/now-light.svg" width="100%" alt="What I'm working on right now" />
+</picture>
 
-<br/>
+<br/><br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/h-contact-dark.svg" />
-  <img src="assets/h-contact-light.svg" width="100%" alt="06 — Contact" />
+  <img src="assets/h-contact-light.svg" width="100%" alt="07 — Contact" />
 </picture>
 
 <a href="mailto:dev.jhawar.cs@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
-    <img src="assets/footer-light.svg" width="100%" alt="Contact: dev.jhawar.cs@gmail.com · linkedin.com/in/dev-jhawar11 · devjhawar.com" />
+    <img src="assets/footer-light.svg" width="100%" alt="Contact: dev.jhawar.cs@gmail.com · linkedin.com/in/dev-jhawar11 · x.com/dev_eloper__ · devjhawar.com" />
   </picture>
 </a>
 
@@ -147,6 +181,10 @@ believes:      "build things that work in the real world, not just in notebooks"
 <a href="mailto:dev.jhawar.cs@gmail.com">dev.jhawar.cs@gmail.com</a> &nbsp;/&nbsp;
 <a href="https://linkedin.com/in/dev-jhawar11">LinkedIn</a> &nbsp;/&nbsp;
 <a href="https://devjhawar.com">devjhawar.com</a> &nbsp;/&nbsp;
-<a href="https://resume-drab-six.vercel.app">Résumé</a>
+<a href="https://resume-drab-six.vercel.app">Résumé</a> &nbsp;/&nbsp;
+<a href="https://x.com/dev_eloper__">X</a> &nbsp;/&nbsp;
+<a href="https://dev.to/dev_jhawar">dev.to</a> &nbsp;/&nbsp;
+<a href="https://leetcode.com/u/devjhawar/">LeetCode</a> &nbsp;/&nbsp;
+<a href="https://codeforces.com/profile/devjhawar11">Codeforces</a>
 </sub>
 </div>

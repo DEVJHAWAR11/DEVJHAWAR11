@@ -3,6 +3,7 @@ import base64
 import html
 import io
 import math
+import os
 import random
 import re
 from pathlib import Path
@@ -24,6 +25,12 @@ THEMES = {
 
 FACES = [("G", 400, "geist-400"), ("G", 500, "geist-500"), ("G", 600, "geist-600"),
          ("GM", 400, "geist-mono-400"), ("GM", 500, "geist-mono-500")]
+
+
+# Motion always plays: an OS-level "reduce motion" switch (Windows "Animation effects" off) would
+# otherwise freeze every CSS animation. STILL=1 builds a frozen copy for screenshots only.
+STILL = ("*{animation:none!important}.draw{stroke-dashoffset:0}.still{opacity:1!important}.w{fill-opacity:1!important}"
+         if os.environ.get("STILL") == "1" else "")
 
 
 def esc(s):
@@ -67,7 +74,7 @@ def doc(w, h, t, body, css="", title=""):
 .draw{{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) .2s forwards}}
 @keyframes draw{{to{{stroke-dashoffset:0}}}}
 {css}
-@media (prefers-reduced-motion:reduce){{*{{animation:none!important}}.draw{{stroke-dashoffset:0}}.still{{opacity:1!important}}}}
+{STILL}
 </style>
 {body}
 </svg>
