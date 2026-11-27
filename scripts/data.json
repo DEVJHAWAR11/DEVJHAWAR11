@@ -1,29 +1,8 @@
 {
- "contributions": 776,
- "commits": 667,
+ "contributions": 1041,
+ "commits": 701,
  "longest_streak": 12,
  "days": [
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
   0,
   0,
   0,
@@ -139,8 +118,8 @@
   7,
   29,
   31,
-  15,
-  3,
+  16,
+  2,
   0,
   0,
   0,
@@ -258,8 +237,8 @@
   0,
   0,
   0,
-  0,
-  8,
+  1,
+  7,
   0,
   1,
   0,
@@ -278,7 +257,7 @@
   0,
   0,
   6,
-  23,
+  40,
   98,
   0,
   2,
@@ -295,9 +274,9 @@
   0,
   1,
   0,
-  13,
-  4,
-  1,
+  18,
+  8,
+  2,
   0,
   0,
   0,
@@ -364,18 +343,42 @@
   6,
   0,
   9,
-  7,
+  100,
+  24,
+  0,
+  0,
+  3,
+  18,
   1,
+  5,
   0,
   0,
   0,
-  1
+  0,
+  0,
+  16,
+  4,
+  4,
+  0,
+  2,
+  26,
+  8,
+  5,
+  10,
+  2,
+  0,
+  0,
+  0,
+  0,
+  4,
+  10,
+  5
  ],
  "repos": 21,
  "langs": [
   [
    "Python",
-   46.9
+   49.1
   ],
   [
    "TypeScript",
@@ -383,70 +386,70 @@
   ],
   [
    "Astro",
-   7.1
+   6.1
   ],
   [
    "Svelte",
-   5.5
+   4.7
   ],
   [
    "JavaScript",
-   0.9
+   0.7
   ],
   [
    "C++",
-   0.7
+   0.6
   ]
  ],
  "merged": [
   {
    "repo": "bytedance/deer-flow",
-   "stars": 84918,
+   "stars": 85861,
    "title": "test(backend): fix three more Windows-host test failures"
   },
   {
    "repo": "PrefectHQ/prefect",
-   "stars": 24108,
+   "stars": 24250,
    "title": "Fix 500 from flow run list endpoints when a parameter exceeds 64 bits"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17022,
+   "stars": 17465,
    "title": "Bound websocket sends so a peer that stops reading can't stall the pipeline"
   },
   {
    "repo": "pipecat-ai/pipecat",
-   "stars": 17022,
+   "stars": 17465,
    "title": "Close the aiohttp session FalSTTService creates"
   },
   {
    "repo": "livekit/agents",
-   "stars": 15068,
+   "stars": 15359,
    "title": "fix(meta): don't delay Muse STT audio by the websocket connect time"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13062,
+   "stars": 13737,
    "title": "Mark deleted ids in a single pass in Terms.delete"
   },
   {
    "repo": "neuml/txtai",
-   "stars": 13062,
+   "stars": 13737,
    "title": "Select top results instead of sorting every score in numpy and torch ANN search"
   },
   {
    "repo": "truera/trulens",
-   "stars": 3625,
+   "stars": 3701,
    "title": "feat(feedback): add role adherence conversation metric"
   },
   {
-   "repo": "collective/icalendar",
-   "stars": 1186,
+   "repo": "PyCalendar/icalendar",
+   "stars": 1193,
    "title": "Add vCalAddress.uri property"
   },
   {
    "repo": "docling-project/docling-core",
-   "stars": 296,
+   "stars": 305,
    "title": "fix(origin): accept application/zip MIME type"
   },
   {
@@ -463,9 +466,24 @@
    "repo": "arpanz/policylens",
    "stars": 1,
    "title": "feat: add POST/GET /ingest/summary/{policy_id} for auto-generated pol…"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Point download links at the Tidyflow releases page"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Rebuild the site around the current app"
+  },
+  {
+   "repo": "paavanf/tidyflow-landing",
+   "stars": 0,
+   "title": "Redesign hero and add light/dark theme"
   }
  ],
- "opened": 19,
+ "opened": 22,
  "articles": [
   {
    "title": "Bigger AI models aren't always better: how a 70B model beat a 280B one by reading more",
